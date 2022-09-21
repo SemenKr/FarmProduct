@@ -1,16 +1,16 @@
 import React from "react";
 import Header from "/src/components/layout/header/header";
 import Footer from "/src/components/layout/footer/footer";
-import MainPage from "/src/components/pages/main-page/main-page";
-import "./style.css";
+import Order from "/src/components/pages/order/order";
+import { Main } from "./styles";
 
 function PageWrapper({ features }) {
   return (
     <>
       <Header />
-      <main className="page-wrapper__main">
-        <MainPage features={features} />
-      </main>
+      <Main>
+        <Order />
+      </Main>
       <Footer />
     </>
   );
