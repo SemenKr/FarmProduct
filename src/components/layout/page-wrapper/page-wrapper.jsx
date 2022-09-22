@@ -4,12 +4,12 @@ import Footer from "/src/components/layout/footer/footer";
 import Order from "/src/components/pages/order/order";
 import { Main } from "./styles";
 
-function PageWrapper({ features }) {
+function PageWrapper({ products }) {
   return (
     <>
       <Header />
       <Main>
-        <Order />
+        <Order products={products} />
       </Main>
       <Footer />
     </>
