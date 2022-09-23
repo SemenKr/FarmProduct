@@ -40,7 +40,7 @@ function Order({
         </Panel>
       </LeftColumn>
       <ProductSwiper>
-        {products?.map((product) => (
+        {products.map((product) => (
           <SwiperSlide key={product.id}>
             <ProductCart product={product} />
           </SwiperSlide>

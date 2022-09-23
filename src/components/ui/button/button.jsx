@@ -1,14 +1,7 @@
 import React from "react";
 import { StyledButton } from "./styles";
 
-export default function Button({
-  children,
-  link,
-  maxWidth,
-  className,
-  onClick,
-  ...props
-}) {
+function Button({ children, link, maxWidth, className, onClick, ...props }) {
   return (
     <StyledButton
       {...props}
@@ -20,3 +13,4 @@ export default function Button({
     </StyledButton>
   );
 }
+export default Button;
